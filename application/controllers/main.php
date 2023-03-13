@@ -18,4 +18,12 @@ class Main extends CI_Controller
     {
         $this->load->view('pages/ex9-3');
     }
+
+    public function fileUpload(){
+        $this->load->view('pages/fileUpload');
+    }
+
+    public function form(){
+        $this->load->view('pages/member/form');
+    }
 }

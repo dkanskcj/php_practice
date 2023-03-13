@@ -10,8 +10,10 @@
 </head>
 
 <body>
-<a href="ex9-2">ex9-2</a>
-<a href="ex9-3">ex9-3</a>
+	<a href="ex9-2">ex9-2</a>
+	<a href="ex9-3">ex9-3</a>
+	<a href="fileUpload">fileUpload</a>
+	<a href="form">form</a>
 </body>
 
 </html>

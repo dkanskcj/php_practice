@@ -51,6 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['ex9-2'] = 'main/ex9_2';
 $route['ex9-3'] = 'main/ex9_3';
+$route['fileUpload'] = 'main/fileUpload';
+$route['form'] = 'main/form';
 
 $route['default_controller'] = 'main';
 $route['404_override'] = '';
