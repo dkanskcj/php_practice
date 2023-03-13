@@ -54,7 +54,7 @@
         }
 
         function check_id() {
-            window.open("check_id.php?id=" + document.member.id.value,
+            window.open("checkId/" + document.member.id.value,
                 "IDcheck",
                 "left=700, top=300, width=380, height=160, scrollbars=no, resizable=yes");
         }
@@ -75,24 +75,30 @@
                         </li>
                         <li class="flex w-[20rem] justify-between items-center gap-2">
                             <span class="col1">비밀번호</span>
-                            <span class="col2"><input type="text" name="id" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
+                            <span class="col2"><input type="password" name="pass" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
                         </li>
                         <li class="flex w-[20rem] justify-between items-center gap-2">
                             <span class="col1">비밀번호 확인</span>
-                            <span class="col2"><input type="text" name="id" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
+                            <span class="col2"><input type="password" name="pass_confirm" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
                         </li>
                         <li class="flex w-[20rem] justify-between items-center gap-2">
                             <span class="col1">이름</span>
-                            <span class="col2"><input type="text" name="id" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
+                            <span class="col2"><input type="text" name="name" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
                         </li>
                         <li class="flex w-[20rem] justify-between items-center gap-2">
                             <span class="col1">이메일</span>
-                            <span class="col2"><input type="text" name="id" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
+                            <span class="col2"><input type="text" name="email" class="border borderw-b px-3 py-2 shadow-md rounded-md"></span>
                         </li>
                     </div>
                     <div>
                         <button type="button" class="border border-b px-3 py-2 rounded-md shadow-md border-yellow-500 text-yellow-400 bg-yellow-50 hover:opacity-80" onclick="check_id()">중복체크</button>
                     </div>
+                </div>
+                <div class="border border-b border-black w-full"></div>
+                <div class="flex justify-end gap-2 pt-5">
+                    <button type="button" onclick="check_input()" class="px-3 py-2 border border-b rounded-md shadow-md border-green-500 text-green-400 bg-green-50 hover:opacity-80">저장하기</button>
+                    <!-- <button type="button" onclick="reset_form()" class="px-3 py-2 border border-b rounded-md shadow-md border-red-500 text-red-400 bg-red-50 hover:opacity-80">취소하기</button> -->
+                    <button type="button" onclick="view()" class="px-3 py-2 border border-b rounded-md shadow-md border-red-500 text-red-400 bg-red-50 hover:opacity-80">취소하기</button>
                 </div>
             </div>
         </form>
